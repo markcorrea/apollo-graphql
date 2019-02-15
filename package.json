@@ -4,7 +4,9 @@
   "description": "learning apollo and graphql",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/markcorrea/apollo-graphql/issues"
   },
-  "homepage": "https://github.com/markcorrea/apollo-graphql#readme"
+  "homepage": "https://github.com/markcorrea/apollo-graphql#readme",
+  "dependencies": {
+    "apollo-client": "^2.4.13",
+    "concurrently": "^4.1.0"
+  }
 }
